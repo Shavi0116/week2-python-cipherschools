@@ -1,0 +1,49 @@
+def sum_diff(a,b):
+    s=a+b
+    d=a-b
+    return s,d
+
+c=sum_diff(100,50)
+print(c)
+
+#dictionary
+
+a={
+    "name":"tristian",
+    "company":"google"
+}
+print(a["name"])
+
+a={
+    "name":"tristian",
+    "company":"google"
+}
+key="marks"
+if key in a:
+    print(a[key])
+else:
+    print("key does not exist")
+
+
+a={
+    "name":"tristian",
+    "company":"google"
+}
+key="marks"
+print(a.get(key,"key does not exist"))
+
+
+a={
+    "name":"tristian",
+    "company":"google"
+}
+print(a.keys())
+print(a.values())
+
+
+a={
+    "name":"tristian",
+    "company":"google"
+}
+for key,value in a.items():
+    print(key,';-;',value)
