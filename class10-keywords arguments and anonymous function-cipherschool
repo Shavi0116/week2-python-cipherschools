@@ -1,0 +1,57 @@
+print(1,2,3,4,sep=".")
+
+def func(a,b,c,d):
+    print(a)
+    print(b)
+    print(c)
+    print(d)
+
+func(c=3,b=5,d=8,a=7)
+
+def hello():
+    return 7
+
+hello()
+
+#required arguments
+def func(a,b):
+    print(a,b)
+func(1,2)
+
+#default arguments 
+def func(a=1,b=2):
+    print(a,b)
+func()
+func(1)
+func(3,4)
+
+#optional positional arguments
+def func(a,b,*c):
+    print(a)
+    print(b)
+    print(c)
+func(1,2,3,4,6)
+
+def func(a,b,*c,d):
+    print(a)
+    print(b)
+    print(c)
+    print(d)
+func(1,2,3,4,5,6,7,d=9)
+
+def func(**k):
+    print(k)
+func(name = "Knox")
+
+def func(a,b,*c,d,e="knox"):
+    print(a)
+    print(b)
+    print(c)
+    print(d)
+    print(e)
+func(1,2,3,4,d="mariana")
+
+#anonymous function or lambda function
+lambda a, b: a+b
+a(1,3)
+
