@@ -1,0 +1,16 @@
+a={1,2,3,4,5}
+b={2,5,8,9,0}
+print(a-b)
+print(a.union(b))
+print(a.intersection(b))
+
+
+a=[['']*3]*3
+a[1][1]='x'
+print(a)
+
+a=2
+print(id(a))
+
+a=(1,2,3)
+print(hash(a))
